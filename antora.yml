@@ -1,0 +1,14 @@
+---
+name: synapse
+title: Cerbos Synapse
+version: ~
+ext:
+  collector:
+    run:
+      - command: "./fetch-synapse-docs.sh"
+    scan:
+      dir: _synapse/docs
+      clean: true
+      into:
+        name: synapse
+        version: ~
